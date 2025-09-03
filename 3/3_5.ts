@@ -40,5 +40,15 @@ console.log(arr8.includes(1000)); // false
 // for-of文によるループ
 const arr9 = [1, 2, 3];
 for (const elm of arr9) {
-  console.log(elm + 1);
+  //elmがループごとに作り直されるからconstでも問題ない
+  console.log(elm + 1); //2, 3, 4が1つずつ改行込みで出力
 }
+
+// タプル型
+let tuple: [string, number] = ["foo", 0];
+tuple = ["aiueo", 1];
+
+const str = tuple[0];
+const num1 = tuple[1];
+
+const nothing = tuple[2]; // タプル型の要素数を超えているのでエラー
