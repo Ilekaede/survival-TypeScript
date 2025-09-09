@@ -14,4 +14,12 @@ function createUser(name, age) {
     };
 }
 var getMessage = createUser("uhyo", 26);
-console.log(getMessage("こんにちは"));
+console.log(getMessage("こんにちは")); // クロージャ
+var h = {
+    name: "a",
+    age: 1,
+};
+var callName = function (obj) {
+    console.log(obj.name);
+};
+// console.log(callName(h));
