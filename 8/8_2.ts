@@ -17,8 +17,9 @@
 
 // console.log("タイマーセット");
 
-import { readFile } from "fs";
-readFile("foo.txt", "utf-8", (err, result) => {
-  console.log(result);
-});
-console.log("読み込み開始");
+// // 第三引数がコールバック関数
+// import { readFile } from "fs";
+// readFile("foo.txt", "utf-8", (err, result) => {
+//   console.log(result);
+// });
+// console.log("読み込み開始");
